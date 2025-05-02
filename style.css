@@ -1,0 +1,219 @@
+:root {
+    --primary: #00ff9d;
+    --secondary: #00b8ff;
+    --background: #0a0e17;
+    --text: #e0e0e0;
+    --glow: 0 0 10px rgba(0, 255, 157, 0.7);
+    --frontend-glow: 0 0 5px rgba(0, 184, 255, 0.5);
+    --backend-glow: 0 0 5px rgba(255, 0, 184, 0.5);
+    --database-glow: 0 0 5px rgba(0, 255, 0, 0.5);
+    --mobile-glow: 0 0 5px rgba(255, 165, 0, 0.5);
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: var(--background);
+    color: var(--text);
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.particles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0.3;
+    transition: opacity 0.5s ease;
+}
+
+.particles.loading {
+    opacity: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 15px;
+    background: rgba(10, 14, 23, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 255, 157, 0.2);
+    border: 1px solid rgba(0, 255, 157, 0.1);
+    max-width: 800px;
+    width: 90%;
+}
+
+.typing-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.static-text {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    color: var(--text);
+    opacity: 0.9;
+}
+
+.dynamic-text {
+    position: relative;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    font-weight: 700;
+}
+
+.typed-text {
+    color: var(--primary);
+    text-shadow: var(--glow);
+    position: relative;
+    display: inline-block;
+    min-width: 20px;
+}
+
+.typed-text::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transform-origin: left;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 1.2em;
+    background: var(--primary);
+    margin-left: 5px;
+    border-radius: 2px;
+    box-shadow: var(--glow);
+    transform: translateY(2px);
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.tech-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-items: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.tech-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 157, 0.3));
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.tech-label {
+    font-size: 0.7rem;
+    color: var(--text);
+    opacity: 0.8;
+    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tech-item[data-category="frontend"] .tech-icon {
+    filter: var(--frontend-glow);
+}
+.tech-item[data-category="backend"] .tech-icon {
+    filter: var(--backend-glow);
+}
+.tech-item[data-category="database"] .tech-icon {
+    filter: var(--database-glow);
+}
+.tech-item[data-category="mobile"] .tech-icon {
+    filter: var(--mobile-glow);
+}
+
+.tech-item:hover {
+    opacity: 1;
+}
+.tech-item:hover .tech-icon {
+    transform: translateY(-5px) scale(1.1);
+    filter: drop-shadow(0 0 12px rgba(0, 255, 157, 0.8));
+}
+.tech-item[data-category="frontend"]:hover .tech-icon {
+    filter: drop-shadow(0 0 12px rgba(0, 184, 255, 0.8));
+}
+.tech-item[data-category="backend"]:hover .tech-icon {
+    filter: drop-shadow(0 0 12px rgba(255, 0, 184, 0.8));
+}
+.tech-item[data-category="database"]:hover .tech-icon {
+    filter: drop-shadow(0 0 12px rgba(0, 255, 0, 0.8));
+}
+.tech-item[data-category="mobile"]:hover .tech-icon {
+    filter: drop-shadow(0 0 12px rgba(255, 165, 0, 0.8));
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+@keyframes iconEntrance {
+    from {
+    opacity: 0;
+    transform: translateY(20px);
+    }
+    to {
+    opacity: 0.7;
+    transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .typing-container {
+    flex-direction: column;
+    }
+    
+    .tech-item {
+    width: 60px;
+    }
+    
+    .tech-icon {
+    width: 40px;
+    height: 40px;
+    }
+    
+    .tech-label {
+    font-size: 0.6rem;
+    }
+}
+
+.tech-icons::after {
+    content: "";
+    flex: auto;
+}
