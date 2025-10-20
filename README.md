@@ -1,6 +1,6 @@
 # Welcome to My-Intro 🎉
 
-![My Intro Banner](https://via.placeholder.com/1200x400?text=My+Intro+Banner)
+![My Intro Banner](https://placehold.co/1200x400?text=My+Intro+Banner)
 
 Explore the world of animations and interactive design with **My-Intro**. This repository showcases my personal portfolio website, built with a focus on responsive design and user experience. Dive into the code and see how I bring ideas to life!
 
